@@ -1,6 +1,3 @@
-
-
-
 class House:
     def __init__(self, name, number_of_floors):
         self.name=name
@@ -13,18 +10,13 @@ class House:
         if new_floor > self.number_of_floors:
             print("Такого этажа не существует")
         else:
-            if new_floor > 0:
+            if new_floor > 1:
                 i=0
                 while i < new_floor:
                    i += 1
                    print(i)
             else:
-                i = new_floor
-                new_floor = 0
-                print(i)
-                while i < new_floor:
-                    i += 1
-                    print(i)
+                print("Такого этажа не существует")
 
 
 
@@ -32,5 +24,5 @@ class House:
 
 h1 = House('ЖК Горский', 18)
 h2 = House('Домик в деревне', 2)
-h1.go_to(-7)
+h1.go_to(6)
 h2.go_to(2)
